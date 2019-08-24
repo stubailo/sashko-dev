@@ -1,6 +1,6 @@
 ---
 title: Shave off some clicks by making your own bookmarklets
-description: Yo what is up
+description: How to put JavaScript in your bookmarks to operate on pages in your web browser, on desktop and mobile
 date: "2019-06-05"
 ---
 
@@ -23,7 +23,7 @@ Let’s add a button to our browser that just tells us "Hello, world!"
 Create a bookmark called "Say hello", but instead of putting a web address as the URL, put the following code:
 
 ```js
-javascript:alert('Hello, world')
+javascript: alert("Hello, world");
 ```
 
 Here are detailed instructions if you’re not familiar with how to do this:
@@ -46,7 +46,7 @@ Here are detailed instructions if you’re not familiar with how to do this:
 Now, open the bookmark. You’ll note that instead of going to a page, it’ll open a dialog on the page that says “Hello, world!” Now, let’s make it a little more interesting by pulling some information from the page. Edit the bookmark, and replace the code with:
 
 ```js
-javascript:alert('The page is called: ' + document.title)
+javascript: alert("The page is called: " + document.title);
 ```
 
 So that’s pretty cool, but it turns out we can do much more than just open a dialog. Before we move on, a note:
@@ -96,4 +96,3 @@ Here are some tips:
 1. Prototype in the browser’s developer tools. (TODO link)
 2. Don’t forget to use the encodeURIComponent function to construct valid URLs
 3. Share your ideas with others!
-
