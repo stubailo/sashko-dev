@@ -4,6 +4,7 @@ import Github from "./../../content/assets/github"
 import Linkedin from "./../../content/assets/linkedin"
 import Twitter from "./../../content/assets/twitter"
 import {rhythm} from "../utils/typography"
+import "./layout.css"
 
 const Layout = ({location, title, children, avatar, github, twitter, linkedin}) => {
 	const rootPath = `${__PATH_PREFIX__}/`;
@@ -11,7 +12,7 @@ const Layout = ({location, title, children, avatar, github, twitter, linkedin}) 
 
 	if (location.pathname === rootPath){
 		header = (
-			<div style={{display: 'inline-flex', width: '100%', marginBottom: '25px'}}>
+			<div className={'head-style'}>
 				<Link
 					style={{
 						boxShadow: `none`,
@@ -44,16 +45,16 @@ const Layout = ({location, title, children, avatar, github, twitter, linkedin}) 
 					>
 						{title}
 					</Link>
-					<div style={{marginRight: '50px'}}>
-						<a style={{boxShadow: 'none', margin: '0 10px'}} href={`https://github.com/${github}`} target={"_blank"}
+					<div className={'icon-box'}>
+						<a className={'icon-link'} href={`https://github.com/${github}`} target={"_blank"}
 						   rel="noopener noreferrer">
 							<Github width="20px"/>
 						</a>
-						<a style={{boxShadow: 'none', margin: '0 10px'}} href={`https://linkedin.com/in/${linkedin}`}
+						<a className={'icon-link'} href={`https://linkedin.com/in/${linkedin}`}
 						   target={"_blank"} rel="noopener noreferrer">
 							<Linkedin width="20px"/>
 						</a>
-						<a style={{boxShadow: 'none', margin: '0 10px'}} href={`https://twitter.com/${twitter}`} target={"_blank"}
+						<a className={'icon-link'} href={`https://twitter.com/${twitter}`} target={"_blank"}
 						   rel="noopener noreferrer">
 							<Twitter width="20px"/>
 						</a>
@@ -64,17 +65,9 @@ const Layout = ({location, title, children, avatar, github, twitter, linkedin}) 
 	} else {
 		header = (
 			<Link
-				style={{
-					boxShadow: `none`,
-					color: `inherit`,
-					fontFamily: `Montserrat, sans-serif`,
-					marginTop: 0,
-					fontWeight: 'bold',
-					fontSize: '12px'
-				}}
+				className={'head-link'}
 				to={`/`}
 			>
-				{/*{title}*/}
 				&lt; Home
 			</Link>
 		)
@@ -87,11 +80,13 @@ const Layout = ({location, title, children, avatar, github, twitter, linkedin}) 
 				maxWidth: rhythm(30),
 				padding: `${rhythm(1.5)} ${rhythm(3 / 4)}`,
 			}}
+			className={'body-pad'}
 		>
 			<header style={{minHeight: 50}}>{header}</header>
 			<main>{children}</main>
-			<footer>
-				© {new Date().getFullYear()}, Built with
+			<footer style={{textAlign: 'center', fontSize: '12px', opacity: 0.5}}>
+				{ title }
+				&nbsp; © {new Date().getFullYear()}, Built with
 				{` `}
 				<a href="https://www.gatsbyjs.org">Gatsby</a>
 			</footer>

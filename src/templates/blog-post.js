@@ -31,30 +31,15 @@ const BlogPostTemplate = ({data, pageContext, location}) => {
 							<small
 								style={{
 									...scale(-1 / 5),
-									display: `block`,
-									marginBottom: 0,
-									opacity: 0.5,
-									fontStyle: 'italic',
-									marginTop: '5px',
-									lineHeight: '1.25rem'
+									lineHeight: '22px'
 								}}
 							>
 								{post.frontmatter.description}
 							</small></h1>
-
-
 					</div>
 
 					<div style={{display: 'inline-flex', width: '100%', paddingBottom: '25px'}}>
-
-						<img style={{
-							width: '50px', borderRadius: "50%",
-							margin: 'auto'
-						}}
-						     srcSet={(post.frontmatter.authorImg && post.frontmatter.authorImg.childImageSharp.fixed.srcSet) || avatar}
-						     alt=""/>
-
-
+						<img className={'author-img'} srcSet={(post.frontmatter.authorImg && post.frontmatter.authorImg.childImageSharp.fixed.srcSet) || avatar} alt=""/>
 						<div style={{
 							display: 'flex', marginLeft: '10px', alignItems: 'center',
 							width: '100%',
@@ -81,18 +66,18 @@ const BlogPostTemplate = ({data, pageContext, location}) => {
 							</div>
 
 
-							<div style={{marginRight: '50px'}}>
-								<a style={{boxShadow: 'none', margin: '0 10px'}}
+							<div className={'icon-box'}>
+								<a className={'icon-link'}
 								   href={`https://github.com/${post.frontmatter.authorGithub || github}`} target={"_blank"}
 								   rel="noopener noreferrer">
 									<Github width="20px"/>
 								</a>
-								<a style={{boxShadow: 'none', margin: '0 10px'}}
+								<a className={'icon-link'}
 								   href={`https://linkedin.com/in/${post.frontmatter.authorLinkedin || linkedin}`} target={"_blank"}
 								   rel="noopener noreferrer">
 									<Linkedin width="20px"/>
 								</a>
-								<a style={{boxShadow: 'none', margin: '0 10px'}}
+								<a className={'icon-link'}
 								   href={`https://twitter.com/${post.frontmatter.authorTwitter || twitter}`} target={"_blank"}
 								   rel="noopener noreferrer">
 									<Twitter width="20px"/>

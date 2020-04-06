@@ -4,7 +4,8 @@ import {Link, graphql} from "gatsby"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import External from './../../content/assets/external'
-import { externalPost } from "../components/external";
+import {externalPost} from "../components/external";
+import "./index.css";
 
 const BlogIndex = ({data, location}) => {
 	const siteTitle = data.site.siteMetadata.title;
@@ -27,34 +28,27 @@ const BlogIndex = ({data, location}) => {
 				const title = node.title;
 				return (
 					<article key={node.url}>
-						<header
-							style={{display: 'flex', alignItems: 'center', padding: '15px 0', borderBottom: '1px solid #efefef'}}>
+						<header className={'post-header'}>
 							{node.external ?
-								<a href={node.url} style={{boxShadow: 'none'}} target={'_blank'} rel="noopener noreferrer"><img
-									srcSet={node.imgUrl} style={{minWidth: '150px', height: '150px', marginBottom: '0',maxWidth: '150px',objectFit: 'cover'}} alt=""/> </a> :
-								<Link style={{boxShadow: `none`, height: '150px'}} to={node.url}>
-									<img srcSet={node.imgUrl} style={{minWidth: '150px', height: '150px', marginBottom: '0',maxWidth: '150px',objectFit: 'cover'}} alt=""/>
+								<a href={node.url} className={'link-img'} target={'_blank'} rel="noopener noreferrer">
+									<img srcSet={node.imgUrl} className={"post-img"} alt=""/> </a> :
+								<Link className={'link-img'} to={node.url}>
+									<img srcSet={node.imgUrl} className={"post-img"} alt=""/>
 								</Link>
 							}
 
-							<div style={{marginLeft: '20px', marginTop: '-15px'}}>
-								<small style={{opacity: '0.75', fontStyle: 'italic'}}>{node.date}</small>
-								<h3
-									style={{
-										// marginBottom: rhythm(1 / 4),
-										margin: '0 0 5px 0',
-										lineHeight: '28px',
-									}}
-								>
-									{node.external ? <a href={node.url} style={{boxShadow: 'none', fontWeight: 'bold'}} target={'_blank'}
+							<div style={{}} className={'post-data'}>
+								<small>{node.date}</small>
+								<h3 className={'list-h3'}>
+									{node.external ? <a href={node.url} className={'font-val'} target={'_blank'}
 									                    rel="noopener noreferrer">{title} <External width="18px"/></a> :
-										<Link style={{boxShadow: `none`, fontWeight: 'bold'}} to={node.url}>
+										<Link className={'font-val'} to={node.url}>
 											{title}
 										</Link>
 									}
 								</h3>
 								<p
-									style={{fontSize: '14px', marginBottom: 0, fontWeight: '300'}}
+									className={'desc'}
 									dangerouslySetInnerHTML={{
 										__html: node.desc,
 									}}

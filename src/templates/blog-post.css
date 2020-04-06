@@ -4,3 +4,42 @@
     max-width: 980px;
     margin: 0 auto;
 }
+
+small {
+    display: block;
+    margin-bottom: 0;
+    opacity: 0.5;
+    font-style: italic;
+    margin-top: 5px;
+    line-height: 1.25rem;
+}
+
+.author-img {
+    width: 50px;
+    border-radius: 50%;
+    margin: auto;
+}
+
+.icon-box {
+    margin-right: 50px;
+    display: flex;
+}
+
+.icon-link {
+    box-shadow: none;
+    padding: 0 10px;
+}
+
+.icon-box:hover > a {
+    filter: blur(2px);
+}
+
+.icon-box:hover > a:hover {
+    filter: blur(0px);
+}
+
+@media only screen and (max-width: 768px) {
+    .icon-box {
+        margin-right: 10px;
+    }
+}
