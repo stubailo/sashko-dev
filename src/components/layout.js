@@ -84,7 +84,7 @@ const Layout = ({location, title, children, avatar, github, twitter, linkedin}) 
 		>
 			<header style={{minHeight: 50}}>{header}</header>
 			<main>{children}</main>
-			<footer style={{textAlign: 'center', fontSize: '12px', opacity: 0.5}}>
+			<footer style={{textAlign: 'center', fontSize: '12px', opacity: 0.5, margin: '20px 0'}}>
 				{ title }
 				&nbsp; © {new Date().getFullYear()}, Built with
 				{` `}
