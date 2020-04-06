@@ -20,7 +20,7 @@ var s = "JavaScript syntax highlighting";
 alert(s);
 ```
 
-<iframe src="http://www.example.com/" width="600" height="400"></iframe>
+<iframe src="https://www.example.com/" width="600" height="400"></iframe>
 
 I'm sure I'll write a lot more interesting things in the future.
 
