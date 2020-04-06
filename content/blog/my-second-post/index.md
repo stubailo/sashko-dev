@@ -1,6 +1,8 @@
 ---
 title: My Second Post!
 date: "2015-05-06T23:46:37.121Z"
+publish: true
+imgUrl: './salty_egg.jpg'
 ---
 
 Wow! I love blogging so much already.

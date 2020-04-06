@@ -1,14 +1,16 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Starter Blog`,
+    title: `sashko.dev`,
     author: {
-      name: `Kyle Mathews`,
-      summary: `who lives and works in San Francisco building useful things.`,
+      name: `Sashko Stubailo`,
     },
-    description: `A starter blog demonstrating what Gatsby can do.`,
-    siteUrl: `https://gatsby-starter-blog-demo.netlify.com/`,
+    description: `Writing about making computers and programming easier and more powerful.`,
+    siteUrl: `https://sashko.dev/`,
     social: {
-      twitter: `kylemathews`,
+      twitter: `stubailo`,
+      github: `stubailo`,
+      avatar: `https://github.com/stubailo.png`,
+      linkedin: `stubailo`
     },
   },
   plugins: [
@@ -35,6 +37,13 @@ module.exports = {
             options: {
               maxWidth: 590,
             },
+          },
+          {
+            resolve: "gatsby-remark-embed-youtube",
+            options: {
+              width: 800,
+              height: 400
+            }
           },
           {
             resolve: `gatsby-remark-responsive-iframe`,
@@ -76,6 +85,7 @@ module.exports = {
         pathToConfigModule: `src/utils/typography`,
       },
     },
+
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,

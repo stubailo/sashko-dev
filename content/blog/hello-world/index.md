@@ -1,12 +1,33 @@
 ---
 title: Hello World
 date: "2015-05-01T22:12:03.284Z"
-description: "Hello World"
+description: "Hello World, this is desc"
+imgUrl: './salty_egg.jpg'
+publish: true
+author: "Inzimam Ul Haq"
+authorGithub: 'inhaq'
+authorTwitter: 'inhaq_'
+authorLinkedin: 'inhaq'
+authorImg: './salty_egg.jpg'
+recommendUrl: 'https://sashko.dev/blog/bookmarklet'
+recommendTitle: 'Bookmarklets for sending emails and adding todo items'
 ---
 
 This is my first post on my new fake blog! How exciting!
 
+```javascript
+var s = "JavaScript syntax highlighting";
+alert(s);
+```
+
+<iframe src="http://www.example.com/" width="600" height="400"></iframe>
+
 I'm sure I'll write a lot more interesting things in the future.
+
+# Look at this Video:
+
+`youtube:https://www.youtube.com/embed/2Xc9gXyf2G4`
+
 
 Oh, and here's a great quote from this Wikipedia on
 [salted duck eggs](https://en.wikipedia.org/wiki/Salted_duck_egg).
