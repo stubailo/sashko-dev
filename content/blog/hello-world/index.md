@@ -29,6 +29,17 @@ I'm sure I'll write a lot more interesting things in the future.
 `youtube:https://www.youtube.com/embed/2Xc9gXyf2G4`
 
 
+<details>
+  <summary>Summary Goes Here</summary>
+  ...this is hidden, collapsable content...
+</details>
+
+
+<table>
+  <tr><td>Hello</td><td>World</td>
+</table>
+
+
 Oh, and here's a great quote from this Wikipedia on
 [salted duck eggs](https://en.wikipedia.org/wiki/Salted_duck_egg).
 
