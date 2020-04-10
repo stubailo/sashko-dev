@@ -87,7 +87,7 @@ const BlogPostTemplate = ({data, pageContext, location}) => {
 					</div>
 
 				</header>
-				<section dangerouslySetInnerHTML={{__html: post.html}}/>
+				<section className={'mdx-style'} dangerouslySetInnerHTML={{__html: post.html}}/>
 
 				<footer style={{margin: '30px 0'}}>
 					<Bio slug={pageContext.slug}/>

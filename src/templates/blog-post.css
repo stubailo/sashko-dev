@@ -38,6 +38,44 @@ small {
     filter: blur(0px);
 }
 
+.mdx-style h1,
+.mdx-style h2,
+.mdx-style h3,
+.mdx-style h4,
+.mdx-style h5,
+.mdx-style h6 {
+    font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji !important;
+    text-transform: inherit !important;
+    letter-spacing: inherit !important;
+    font-style: inherit !important;
+}
+
+.mdx-style a {
+    box-shadow: none;
+}
+
+.mdx-style blockquote {
+    font-size: 16px;
+    font-style: normal;
+    line-height: 24px;
+}
+
+li > ul {
+    margin-left: 0;
+}
+
+ul ul {
+    list-style-type: circle;
+}
+
+li {
+    margin-bottom: 0;
+}
+
+.markdown-body li>p {
+    margin: 0;
+}
+
 @media only screen and (max-width: 768px) {
     .icon-box {
         margin-right: 10px;

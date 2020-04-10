@@ -77,7 +77,7 @@ const Layout = ({location, title, children, avatar, github, twitter, linkedin}) 
 			style={{
 				marginLeft: `auto`,
 				marginRight: `auto`,
-				maxWidth: rhythm(30),
+				maxWidth: rhythm(34.8),
 				padding: `${rhythm(1.5)} ${rhythm(3 / 4)}`,
 			}}
 			className={'body-pad'}
