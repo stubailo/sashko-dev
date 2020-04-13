@@ -41,7 +41,6 @@ const SEO = ({
       ? `${site.siteMetadata.siteUrl}${metaImage.src}`
       : null;
   const canonical = pathname ? `${site.siteMetadata.siteUrl}${pathname}` : null;
-  console.log(site.siteMetadata.siteUrl);
   return (
     <Helmet
       htmlAttributes={{
