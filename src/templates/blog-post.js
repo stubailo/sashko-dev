@@ -18,12 +18,17 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
   const author = data.site.siteMetadata.author.name;
   const { title: siteTitle } = data.site.siteMetadata;
   const { github, twitter, linkedin } = data.site.siteMetadata.social;
+  const image = post.frontmatter.image
+    ? post.frontmatter.image.childImageSharp.resize
+    : null;
 
   return (
     <Layout location={location} title={siteTitle}>
       <SEO
         title={post.frontmatter.title}
         description={post.frontmatter.description || post.excerpt}
+        image={image}
+        pathname={location.pathname}
       />
       <article className="markdown-body">
         <header>
@@ -182,6 +187,15 @@ export const pageQuery = graphql`
         title
         date(formatString: "YYYY-MM-DD")
         description
+        image: featured {
+          childImageSharp {
+            resize(width: 1200) {
+              src
+              height
+              width
+            }
+          }
+        }
         author
         authorGithub
         authorTwitter
