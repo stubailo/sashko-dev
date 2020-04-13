@@ -28,13 +28,17 @@ module.exports = {
       }
     },
     {
-      resolve: `gatsby-transformer-remark`,
+      resolve: `gatsby-plugin-mdx`,
       options: {
-        plugins: [
+        extensions: [`.mdx`, `.md`],
+        defaultLayouts: {
+          posts: require.resolve("./src/templates/blog-post.js")
+        },
+        gatsbyRemarkPlugins: [
           {
             resolve: `gatsby-remark-images`,
             options: {
-              maxWidth: 970
+              maxWidth: 950
             }
           },
           {

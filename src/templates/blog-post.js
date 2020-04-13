@@ -11,9 +11,10 @@ import Github from "../../content/assets/github";
 import Linkedin from "../../content/assets/linkedin";
 import Twitter from "../../content/assets/twitter";
 import Image from "gatsby-image";
+import { MDXRenderer } from "gatsby-plugin-mdx";
 
 const BlogPostTemplate = ({ data, pageContext, location }) => {
-  const post = data.markdownRemark;
+  const post = data.mdx;
   const author = data.site.siteMetadata.author.name;
   const { title: siteTitle } = data.site.siteMetadata;
   const { github, twitter, linkedin } = data.site.siteMetadata.social;
@@ -137,10 +138,9 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
             </div>
           </div>
         </header>
-        <section
-          className={"mdx-style"}
-          dangerouslySetInnerHTML={{ __html: post.html }}
-        />
+        <section className={"mdx-style"}>
+          <MDXRenderer>{data.mdx.body}</MDXRenderer>
+        </section>
 
         <footer style={{ margin: "30px 0" }}>
           <Bio slug={pageContext.slug} />
@@ -174,10 +174,10 @@ export const pageQuery = graphql`
         }
       }
     }
-    markdownRemark(fields: { slug: { eq: $slug } }) {
+    mdx(fields: { slug: { eq: $slug } }) {
       id
       excerpt(pruneLength: 160)
-      html
+      body
       frontmatter {
         title
         date(formatString: "YYYY-MM-DD")

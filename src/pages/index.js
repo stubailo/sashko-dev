@@ -10,18 +10,15 @@ import "./index.css";
 const BlogIndex = ({ data, location }) => {
   const siteTitle = data.site.siteMetadata.title;
   const { github, twitter, linkedin } = data.site.siteMetadata.social;
-  let posts = data.allMarkdownRemark.edges
-    .map(({ node }) => ({
-      url: node.fields.slug,
-      title: node.frontmatter.title,
-      desc: node.frontmatter.description,
-      date: node.frontmatter.date,
-      imgUrl:
-        node.frontmatter.imgUrl &&
-        node.frontmatter.imgUrl.childImageSharp.fixed.srcSet,
-      publish: node.frontmatter.publish
-    }))
-    .filter(node => node.publish);
+  let posts = data.allMdx.edges.map(({ node }) => ({
+    url: node.fields.slug,
+    title: node.frontmatter.title,
+    desc: node.frontmatter.description,
+    date: node.frontmatter.date,
+    imgUrl:
+      node.frontmatter.imgUrl &&
+      node.frontmatter.imgUrl.childImageSharp.fixed.srcSet
+  }));
 
   posts = [...posts, ...externalPost].sort(
     (a, b) => new Date(b.date) - new Date(a.date)
@@ -56,7 +53,7 @@ const BlogIndex = ({ data, location }) => {
                 </Link>
               )}
 
-              <div style={{}} className={"post-data"}>
+              <div className={"post-data"}>
                 <small>{node.date}</small>
                 <h3 className={"list-h3"}>
                   {node.external ? (
@@ -66,7 +63,8 @@ const BlogIndex = ({ data, location }) => {
                       target={"_blank"}
                       rel="noopener noreferrer"
                     >
-                      {title} <External width="18px" />
+                      {title}
+                      <External width="18px" />
                     </a>
                   ) : (
                     <Link className={"font-val"} to={node.url}>
@@ -103,7 +101,10 @@ export const pageQuery = graphql`
         }
       }
     }
-    allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }) {
+    allMdx(
+      sort: { fields: [frontmatter___date], order: DESC }
+      filter: { frontmatter: { published: { eq: true } } }
+    ) {
       edges {
         node {
           excerpt
@@ -114,7 +115,6 @@ export const pageQuery = graphql`
             date(formatString: "YYYY-MM-DD")
             title
             description
-            publish
             imgUrl {
               childImageSharp {
                 fixed(width: 50, height: 50) {

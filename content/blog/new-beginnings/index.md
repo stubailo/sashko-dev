@@ -2,8 +2,15 @@
 title: New Beginnings
 date: "2015-05-28T22:40:32.169Z"
 description: This is a custom description for SEO and Open Graph purposes, rather than the default generated excerpt.
-publish: true
 imgUrl: './salty_egg.jpg'
+published: true
+author: "Inzimam Ul Haq"
+authorGithub: 'inhaq'
+authorTwitter: 'inhaq_'
+authorLinkedin: 'inhaq'
+authorImg: './salty_egg.jpg'
+recommendUrl: 'https://sashko.dev/blog/bookmarklet'
+recommendTitle: 'Bookmarklets for sending emails and adding todo items'
 ---
 
 Far far away, behind the word mountains, far from the countries Vokalia and

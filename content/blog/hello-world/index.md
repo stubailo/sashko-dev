@@ -3,17 +3,16 @@ title: Hello World
 date: "2015-05-01T22:12:03.284Z"
 description: "Hello World, this is desc"
 imgUrl: './salty_egg.jpg'
-publish: true
-author: "Inzimam Ul Haq"
-authorGithub: 'inhaq'
-authorTwitter: 'inhaq_'
-authorLinkedin: 'inhaq'
-authorImg: './salty_egg.jpg'
+published: true
 recommendUrl: 'https://sashko.dev/blog/bookmarklet'
 recommendTitle: 'Bookmarklets for sending emails and adding todo items'
 ---
+import Bio from "./../../../src/components/bio";
 
 This is my first post on my new fake blog! How exciting!
+
+### React component example:
+<Bio slug={' example'} />
 
 ```javascript
 var s = "JavaScript syntax highlighting";
@@ -36,7 +35,7 @@ I'm sure I'll write a lot more interesting things in the future.
 
 
 <table>
-  <tr><td>Hello</td><td>World</td>
+  <tr><td>Hello</td><td>World</td></tr>
 </table>
 
 
