@@ -1,6 +1,6 @@
 ---
 title: Unlocking my email data for fun and carbon offsets
-date: "2015-05-28T22:40:32.169Z"
+date: "2020-04-15T00:59:13.321Z"
 description: What if there was a tool that let you scrape your inbox with a single for loop?
 imgUrl: './ride-results.png'
 published: true
