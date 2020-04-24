@@ -4,7 +4,7 @@ date: "2015-05-01T22:12:03.284Z"
 description: "Hello World, this is desc"
 imgUrl: './salty_egg.jpg'
 featured: './salty_egg.jpg'
-published: true
+published: false
 recommendUrl: 'https://sashko.dev/blog/bookmarklet'
 recommendTitle: 'Bookmarklets for sending emails and adding todo items'
 ---

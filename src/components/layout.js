@@ -126,10 +126,7 @@ const Layout = ({ location, title, children, github, twitter, linkedin }) => {
           margin: "20px 0"
         }}
       >
-        {title}
-        &nbsp; © {new Date().getFullYear()}, Built with
-        {` `}
-        <a href="https://www.gatsbyjs.org">Gatsby</a>
+        {title} © {new Date().getFullYear()}
       </footer>
     </div>
   );

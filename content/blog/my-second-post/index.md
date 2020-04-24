@@ -1,7 +1,7 @@
 ---
 title: My Second Post!
 date: "2015-05-06T23:46:37.121Z"
-published: true
+published: false
 imgUrl: './salty_egg.jpg'
 featured: './salty_egg.jpg'
 recommendUrl: 'https://sashko.dev/blog/bookmarklet'
