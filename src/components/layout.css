@@ -1,7 +1,3 @@
-.icon-box {
-    margin-right: 50px;
-}
-
 .icon-link {
     box-shadow: none;
     padding: 0 10px;
@@ -23,10 +19,6 @@
 }
 
 @media only screen and (max-width: 768px) {
-    .icon-box {
-        margin-right: 10px;
-    }
-
     .body-pad {
         padding: 20px 15px !important;
     }

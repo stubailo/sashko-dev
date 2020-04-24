@@ -19,7 +19,6 @@ small {
 }
 
 .icon-box {
-    margin-right: 50px;
     display: flex;
 }
 
@@ -28,21 +27,12 @@ small {
     padding: 0 10px;
 }
 
-.icon-box:hover > a {
-    filter: blur(2px);
-}
-
-.icon-box:hover > a:hover {
-    filter: blur(0px);
-}
-
 .mdx-style h1,
 .mdx-style h2,
 .mdx-style h3,
 .mdx-style h4,
 .mdx-style h5,
 .mdx-style h6 {
-    font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji !important;
     text-transform: inherit !important;
     letter-spacing: inherit !important;
     font-style: inherit !important;
