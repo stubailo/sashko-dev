@@ -4,7 +4,7 @@ date: "2015-05-01T22:12:03.284Z"
 description: "Hello World, this is desc"
 imgUrl: './salty_egg.jpg'
 featured: './salty_egg.jpg'
-published: false
+published: true
 recommendUrl: 'https://sashko.dev/blog/bookmarklet'
 recommendTitle: 'Bookmarklets for sending emails and adding todo items'
 ---
@@ -52,3 +52,9 @@ Oh, and here's a great quote from this Wikipedia on
 > firm-textured, round yolk that is bright orange-red in color.
 
 ![Chinese Salty Egg](./salty_egg.jpg)
+
+
+- Test a list
+- List item
+    - Nested list
+    - Again

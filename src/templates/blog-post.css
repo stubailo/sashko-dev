@@ -57,15 +57,10 @@ ul ul {
 }
 
 li {
-    margin-bottom: 0;
+    margin-bottom: 0 !important;
+    margin-top: 0 !important;
 }
 
 .markdown-body li>p {
     margin: 0;
-}
-
-@media only screen and (max-width: 768px) {
-    .icon-box {
-        margin-right: 10px;
-    }
 }
