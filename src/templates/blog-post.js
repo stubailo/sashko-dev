@@ -5,13 +5,10 @@ import Bio from "../components/bio";
 import Layout from "../components/layout";
 import SEO from "../components/seo";
 import { scale } from "../utils/typography";
-import "github-markdown-css/github-markdown.css";
-import "./blog-post.css";
-import Github from "../../content/assets/github";
-import Linkedin from "../../content/assets/linkedin";
-import Twitter from "../../content/assets/twitter";
 import Image from "gatsby-image";
 import { MDXRenderer } from "gatsby-plugin-mdx";
+import { Link } from "gatsby";
+import { SocialIcons } from "../components/SocialIcons";
 
 const BlogPostTemplate = ({ data, pageContext, location }) => {
   const post = data.mdx;
@@ -30,6 +27,9 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
         image={image}
         pathname={location.pathname}
       />
+      <Link className={"head-link"} to={`/`}>
+        &lt; Home
+      </Link>
       <article className="markdown-body">
         <header>
           <div>
@@ -111,35 +111,7 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
                 </p>
               </div>
 
-              <div className={"icon-box"}>
-                <a
-                  className={"icon-link"}
-                  href={`https://github.com/${post.frontmatter.authorGithub ||
-                    github}`}
-                  target={"_blank"}
-                  rel="noopener noreferrer"
-                >
-                  <Github width="20px" />
-                </a>
-                <a
-                  className={"icon-link"}
-                  href={`https://linkedin.com/in/${post.frontmatter
-                    .authorLinkedin || linkedin}`}
-                  target={"_blank"}
-                  rel="noopener noreferrer"
-                >
-                  <Linkedin width="20px" />
-                </a>
-                <a
-                  className={"icon-link"}
-                  href={`https://twitter.com/${post.frontmatter.authorTwitter ||
-                    twitter}`}
-                  target={"_blank"}
-                  rel="noopener noreferrer"
-                >
-                  <Twitter width="20px" />
-                </a>
-              </div>
+              <SocialIcons {...{ github, linkedin, twitter }} />
             </div>
           </div>
         </header>

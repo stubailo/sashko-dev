@@ -1,11 +1,11 @@
 module.exports = {
   siteMetadata: {
-    title: `sashko.dev`,
+    title: `Sashko Stubailo`,
     author: {
       name: `Sashko Stubailo`
     },
     description: `Writing about making computers and programming easier and more powerful.`,
-    siteUrl: `https://sashko.netlify.com`,
+    siteUrl: `https://sashko.dev`,
     social: {
       twitter: `stubailo`,
       github: `stubailo`,

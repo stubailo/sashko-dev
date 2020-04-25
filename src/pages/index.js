@@ -5,11 +5,10 @@ import Layout from "../components/layout";
 import SEO from "../components/seo";
 import External from "./../../content/assets/external";
 import { externalPost } from "../components/external";
-import "./index.css";
+import { Header } from "../components/Header";
+import { rhythm, scale } from "../utils/typography";
 
-const BlogIndex = ({ data, location }) => {
-  const siteTitle = data.site.siteMetadata.title;
-  const { github, twitter, linkedin } = data.site.siteMetadata.social;
+const BlogIndex = ({ data }) => {
   let posts = data.allMdx.edges.map(({ node }) => ({
     url: node.fields.slug,
     title: node.frontmatter.title,
@@ -20,67 +19,44 @@ const BlogIndex = ({ data, location }) => {
       node.frontmatter.imgUrl.childImageSharp.fixed.srcSet
   }));
 
+  // Merge MDX posts with external posts from configuration
   posts = [...posts, ...externalPost].sort(
     (a, b) => new Date(b.date) - new Date(a.date)
   );
 
   return (
-    <Layout
-      location={location}
-      title={siteTitle}
-      twitter={twitter}
-      github={github}
-      linkedin={linkedin}
-    >
+    <Layout>
       <SEO title="All posts" />
-      {posts.map(node => {
-        const title = node.title;
+      <Header />
+
+      {posts.map(post => {
+        const title = post.title;
         return (
-          <article key={node.url}>
-            <header className={"post-header"}>
-              {node.external ? (
-                <a
-                  href={node.url}
-                  className={"link-img"}
-                  target={"_blank"}
-                  rel="noopener noreferrer"
-                >
-                  <img srcSet={node.imgUrl} className={"post-img"} alt="" />{" "}
+          <div key={post.url} style={{ marginBottom: rhythm(2) }}>
+            {/* {post.external ? (
+              <a href={post.url} target={"_blank"} rel="noopener noreferrer">
+                <img srcSet={post.imgUrl} alt="" />{" "}
+              </a>
+            ) : (
+              <Link to={post.url}>
+                <img srcSet={post.imgUrl} alt="" />
+              </Link>
+            )} */}
+
+            <h3 style={{ marginBottom: rhythm(1 / 4), ...scale(1 / 4) }}>
+              {post.external ? (
+                <a href={post.url} target={"_blank"} rel="noopener noreferrer">
+                  {title}
+                  <External width="18px" />
                 </a>
               ) : (
-                <Link className={"link-img"} to={node.url}>
-                  <img srcSet={node.imgUrl} className={"post-img"} alt="" />
-                </Link>
+                <Link to={post.url}>{title}</Link>
               )}
-
-              <div className={"post-data"}>
-                <small>{node.date}</small>
-                <h3 className={"list-h3"}>
-                  {node.external ? (
-                    <a
-                      href={node.url}
-                      className={"font-val"}
-                      target={"_blank"}
-                      rel="noopener noreferrer"
-                    >
-                      {title}
-                      <External width="18px" />
-                    </a>
-                  ) : (
-                    <Link className={"font-val"} to={node.url}>
-                      {title}
-                    </Link>
-                  )}
-                </h3>
-                <p
-                  className={"desc"}
-                  dangerouslySetInnerHTML={{
-                    __html: node.desc
-                  }}
-                />
-              </div>
-            </header>
-          </article>
+            </h3>
+            <p style={scale(0)}>
+              {post.date} • {post.desc}
+            </p>
+          </div>
         );
       })}
     </Layout>
@@ -91,16 +67,6 @@ export default BlogIndex;
 
 export const pageQuery = graphql`
   query {
-    site {
-      siteMetadata {
-        title
-        social {
-          twitter
-          github
-          linkedin
-        }
-      }
-    }
     allMdx(
       sort: { fields: [frontmatter___date], order: DESC }
       filter: { frontmatter: { published: { eq: true } } }

@@ -1,16 +1,37 @@
 import Typography from "typography";
-import Wordpress2016 from "typography-theme-wordpress-2016";
 
-Wordpress2016.overrideThemeStyles = () => {
-  return {
-    "a.gatsby-resp-image-link": {
-      boxShadow: `none`
+const theme = {
+  baseFontSize: "17px",
+  baseLineHeight: "26px",
+  modularScales: [
+    {
+      scale: "major tenth"
+    },
+    {
+      scale: "minor seventh",
+      maxWidth: "768px"
     }
-  };
+  ],
+  googleFonts: [
+    {
+      name: "Merriweather",
+      styles: ["700"]
+    },
+    {
+      name: "Source Sans Pro",
+      styles: ["400", "400i", "700"]
+    }
+  ],
+  headerFontFamily: ["Merriweather", "serif"],
+  bodyFontFamily: ["Source Sans Pro", "sans-serif"],
+  headerGray: 20,
+  bodyGray: 20,
+  headerWeight: 700,
+  bodyWeight: 400,
+  boldWeight: 700
 };
 
-delete Wordpress2016.googleFonts;
-const typography = new Typography(Wordpress2016);
+const typography = new Typography(theme);
 
 // Hot reload typography in development.
 if (process.env.NODE_ENV !== `production`) {
