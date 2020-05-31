@@ -2,8 +2,8 @@
 title: Unlocking my email data for fun and carbon offsets
 date: "2020-04-15"
 description: What if there was a tool that let you scrape your inbox with a single for loop?
-imgUrl: './ride-results.png'
-published: true
+imgUrl: "./ride-results.png"
+published: false
 ---
 
 For a while now, I've been dissatisfied with how hard it is for me as an individual to use the data I have wrapped up in various online services. Data has moved from existing locally on my computer to thousands of different cloud services - Gmail, Messenger, Google Docs, etc. These services sometimes offer APIs to get the data out, but it takes a lot of work to actually retrieve it if all you want to do is write a quick script.
@@ -61,7 +61,7 @@ So even though I wasn't able to scrape every single flight from my inbox, I got 
 
 TODO image
 
-One thing I found is that even the subset of flights I scraped was already many many  more kg carbon emissions than my Uber and Lyft rides. It turns out that for people who fly a lot, flights are the overwhelming majority of their carbon emissions.
+One thing I found is that even the subset of flights I scraped was already many many more kg carbon emissions than my Uber and Lyft rides. It turns out that for people who fly a lot, flights are the overwhelming majority of their carbon emissions.
 
 ## Venmo transactions
 

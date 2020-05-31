@@ -2,17 +2,19 @@
 title: Hello World
 date: "2015-05-01T22:12:03.284Z"
 description: "Hello World, this is desc"
-imgUrl: './salty_egg.jpg'
-featured: './salty_egg.jpg'
-published: true
-recommendUrl: 'https://sashko.dev/blog/bookmarklet'
-recommendTitle: 'Bookmarklets for sending emails and adding todo items'
+imgUrl: "./salty_egg.jpg"
+featured: "./salty_egg.jpg"
+published: false
+recommendUrl: "https://sashko.dev/blog/bookmarklet"
+recommendTitle: "Bookmarklets for sending emails and adding todo items"
 ---
+
 import Bio from "./../../../src/components/bio";
 
 This is my first post on my new fake blog! How exciting!
 
 ### React component example:
+
 <Bio slug={' example'} />
 
 ```javascript
@@ -28,17 +30,14 @@ I'm sure I'll write a lot more interesting things in the future.
 
 `youtube:https://www.youtube.com/embed/2Xc9gXyf2G4`
 
-
 <details>
   <summary>Summary Goes Here</summary>
   ...this is hidden, collapsable content...
 </details>
 
-
 <table>
   <tr><td>Hello</td><td>World</td></tr>
 </table>
-
 
 Oh, and here's a great quote from this Wikipedia on
 [salted duck eggs](https://en.wikipedia.org/wiki/Salted_duck_egg).
@@ -53,8 +52,7 @@ Oh, and here's a great quote from this Wikipedia on
 
 ![Chinese Salty Egg](./salty_egg.jpg)
 
-
 - Test a list
 - List item
-    - Nested list
-    - Again
+  - Nested list
+  - Again

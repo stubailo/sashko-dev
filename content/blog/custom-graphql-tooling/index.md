@@ -1,8 +1,8 @@
 ---
 title: Building custom GraphQL tooling for your team
 date: "2019-07-11"
-description: Adapting common GraphQL libraries to your specific needs
-imgUrl: './salty_egg.jpg'
+description: "Talk: Adapting common GraphQL libraries to your specific needs"
+imgUrl: "./salty_egg.jpg"
 published: true
 ---
 

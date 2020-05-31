@@ -10,6 +10,8 @@ import { MDXRenderer } from "gatsby-plugin-mdx";
 import { Link } from "gatsby";
 import { SocialIcons } from "../components/SocialIcons";
 
+import "./blog-post.css";
+
 const BlogPostTemplate = ({ data, pageContext, location }) => {
   const post = data.mdx;
   const author = data.site.siteMetadata.author.name;
@@ -42,15 +44,15 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
               }}
             >
               {post.frontmatter.title}
-              <small
-                style={{
-                  ...scale(-1 / 5),
-                  lineHeight: "22px"
-                }}
-              >
-                {post.frontmatter.description}
-              </small>
             </h1>
+            <p
+              style={{
+                ...scale(1 / 2),
+                lineHeight: "22px"
+              }}
+            >
+              {post.frontmatter.description}
+            </p>
           </div>
 
           <div

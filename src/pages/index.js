@@ -14,9 +14,7 @@ const BlogIndex = ({ data }) => {
     title: node.frontmatter.title,
     desc: node.frontmatter.description,
     date: node.frontmatter.date,
-    imgUrl:
-      node.frontmatter.imgUrl &&
-      node.frontmatter.imgUrl.childImageSharp.fixed.srcSet
+    imgUrl: node.frontmatter.imgUrl
   }));
 
   // Merge MDX posts with external posts from configuration
@@ -31,31 +29,61 @@ const BlogIndex = ({ data }) => {
 
       {posts.map(post => {
         const title = post.title;
-        return (
-          <div key={post.url} style={{ marginBottom: rhythm(2) }}>
-            {/* {post.external ? (
-              <a href={post.url} target={"_blank"} rel="noopener noreferrer">
-                <img srcSet={post.imgUrl} alt="" />{" "}
-              </a>
-            ) : (
-              <Link to={post.url}>
-                <img srcSet={post.imgUrl} alt="" />
-              </Link>
-            )} */}
+        const image = (
+          <img
+            srcSet={post.imgUrl}
+            alt=""
+            style={{ objectFit: "cover", width: "100%", height: "100%" }}
+          />
+        );
 
-            <h3 style={{ marginBottom: rhythm(1 / 4), ...scale(1 / 4) }}>
+        return (
+          <div
+            key={post.url}
+            style={{ marginBottom: rhythm(2), display: "flex" }}
+          >
+            <div
+              style={{
+                width: rhythm(4),
+                height: rhythm(4),
+                marginRight: rhythm(1),
+                position: "relative"
+              }}
+            >
               {post.external ? (
                 <a href={post.url} target={"_blank"} rel="noopener noreferrer">
-                  {title}
-                  <External width="18px" />
+                  {image}
                 </a>
               ) : (
-                <Link to={post.url}>{title}</Link>
+                <Link to={post.url}>{image}</Link>
               )}
-            </h3>
-            <p style={scale(0)}>
-              {post.date} • {post.desc}
-            </p>
+            </div>
+
+            <div>
+              <h3
+                style={{
+                  marginTop: rhythm(3 / 4),
+                  marginBottom: rhythm(1 / 4),
+                  ...scale(1 / 4)
+                }}
+              >
+                {post.external ? (
+                  <a
+                    href={post.url}
+                    target={"_blank"}
+                    rel="noopener noreferrer"
+                  >
+                    {title}
+                    <External width="18px" />
+                  </a>
+                ) : (
+                  <Link to={post.url}>{title}</Link>
+                )}
+              </h3>
+              <p style={scale(0)}>
+                {post.date} • {post.desc}
+              </p>
+            </div>
           </div>
         );
       })}
@@ -81,13 +109,7 @@ export const pageQuery = graphql`
             date(formatString: "YYYY-MM-DD")
             title
             description
-            imgUrl {
-              childImageSharp {
-                fixed(width: 50, height: 50) {
-                  ...GatsbyImageSharpFixed
-                }
-              }
-            }
+            imgUrl
           }
         }
       }
