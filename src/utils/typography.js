@@ -3,15 +3,6 @@ import Typography from "typography";
 const theme = {
   baseFontSize: "17px",
   baseLineHeight: "26px",
-  modularScales: [
-    {
-      scale: "major tenth"
-    },
-    {
-      scale: "minor seventh",
-      maxWidth: "768px"
-    }
-  ],
   googleFonts: [
     {
       name: "Merriweather",
