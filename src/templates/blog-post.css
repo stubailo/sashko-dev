@@ -3,6 +3,14 @@
   margin-bottom: 1.52941rem;
 }
 
+.mdx-style h1,
+.mdx-style h2,
+.mdx-style h3,
+.mdx-style h4,
+.mdx-style h5 {
+  padding-top: 1.52941rem;
+}
+
 table {
   border-collapse: initial;
 }

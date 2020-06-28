@@ -1,7 +1,7 @@
 ---
 title: "Typography.js: Using scale() and rhythm()"
 date: "2020-04-27"
-description: "Defining font sizes and layout like a musical scale"
+description: "Using a musical scale to define font sizes and layout"
 imgUrl: "./salty_egg.jpg"
 published: true
 ---
@@ -62,3 +62,11 @@ each([h1, h2, h3, h4, h5, h6], (header, i) => {
   styles = set(styles, `h${i + 1}.lineHeight`, options.headerLineHeight);
 });
 ```
+
+## Pros and cons
+
+- Scale approach seems good
+- Default styles look odd to me in a few places
+- The library isn't as easy to use directly if you're trying to use CSS rather than CSS in JS, but could easily be modified to use CSS classes for layout
+- Maybe shouldn't be included as the default gatsby starter -- very opinionated
+- I learned something

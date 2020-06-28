@@ -1,2 +1,2 @@
 import "typeface-merriweather";
-import "prismjs/themes/prism-tomorrow.css";
+import "prism-themes/themes/prism-base16-ateliersulphurpool.light.css";

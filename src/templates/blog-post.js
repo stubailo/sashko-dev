@@ -43,8 +43,9 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
               {post.frontmatter.description}
             </p>
           </div>
-          <Profile post={post} />
         </header>
+        <Profile post={post} />
+        <hr />
         <section className={"mdx-style"}>
           <MDXRenderer>{data.mdx.body}</MDXRenderer>
         </section>
