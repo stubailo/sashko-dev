@@ -2,7 +2,7 @@
 title: Building custom GraphQL tooling for your team
 date: "2019-07-11"
 description: "Talk: Adapting common GraphQL libraries to your specific needs"
-imgUrl: "./salty_egg.jpg"
+imgUrl: "./slide.png"
 published: true
 ---
 

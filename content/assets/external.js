@@ -7,7 +7,7 @@ export default function({ width }) {
         width,
         position: "absolute",
         marginLeft: "5px",
-        paddingBottom: "10px"
+        paddingBottom: "3px"
       }}
       xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 30 30"

@@ -31,7 +31,7 @@ const BlogIndex = ({ data }) => {
         const title = post.title;
         const image = (
           <img
-            srcSet={post.imgUrl}
+            srcSet={post.imgUrl ? post.imgUrl.childImageSharp.fixed.srcSet : ""}
             alt=""
             style={{ objectFit: "cover", width: "100%", height: "100%" }}
           />
