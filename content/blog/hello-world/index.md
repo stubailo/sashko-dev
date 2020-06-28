@@ -9,13 +9,9 @@ recommendUrl: "https://sashko.dev/blog/bookmarklet"
 recommendTitle: "Bookmarklets for sending emails and adding todo items"
 ---
 
-import Bio from "./../../../src/components/bio";
-
 This is my first post on my new fake blog! How exciting!
 
 ### React component example:
-
-<Bio slug={' example'} />
 
 ```javascript
 var s = "JavaScript syntax highlighting";

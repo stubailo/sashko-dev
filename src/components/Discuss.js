@@ -1,5 +1,5 @@
 import React from "react";
-const Bio = ({ slug }) => {
+const Discuss = ({ slug }) => {
   const discussUrl = `https://mobile.twitter.com/search?q=${encodeURIComponent(
     `https://sashko.dev${slug}`
   )}`;
@@ -11,4 +11,4 @@ const Bio = ({ slug }) => {
   );
 };
 
-export default Bio;
+export default Discuss;

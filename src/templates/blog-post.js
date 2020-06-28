@@ -1,22 +1,19 @@
 import React from "react";
 import { graphql } from "gatsby";
 
-import Bio from "../components/bio";
+import Discuss from "../components/Discuss";
 import Layout from "../components/layout";
 import SEO from "../components/seo";
-import { scale } from "../utils/typography";
-import Image from "gatsby-image";
+import { scale, rhythm } from "../utils/typography";
 import { MDXRenderer } from "gatsby-plugin-mdx";
 import { Link } from "gatsby";
-import { SocialIcons } from "../components/SocialIcons";
+import Profile from "../components/Profile";
 
 import "./blog-post.css";
 
 const BlogPostTemplate = ({ data, pageContext, location }) => {
   const post = data.mdx;
-  const author = data.site.siteMetadata.author.name;
   const { title: siteTitle } = data.site.siteMetadata;
-  const { github, twitter, linkedin } = data.site.siteMetadata.social;
   const image = post.frontmatter.image
     ? post.frontmatter.image.childImageSharp.resize
     : null;
@@ -29,100 +26,31 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
         image={image}
         pathname={location.pathname}
       />
-      <Link className={"head-link"} to={`/`}>
-        &lt; Home
-      </Link>
+      <p>
+        <Link to={`/`}>All posts</Link>
+      </p>
       <article className="markdown-body">
-        <header>
+        <header style={{ marginBottom: rhythm(1) }}>
           <div>
-            <h1
-              style={{
-                marginBottom: "0",
-                borderBottom: "none",
-                paddingBottom: "15px",
-                marginTop: 10
-              }}
-            >
+            <h1 style={{ marginBottom: rhythm(1 / 2) }}>
               {post.frontmatter.title}
             </h1>
             <p
               style={{
-                ...scale(1 / 2),
-                lineHeight: "22px"
+                ...scale(1 / 2)
               }}
             >
               {post.frontmatter.description}
             </p>
           </div>
-
-          <div
-            style={{
-              display: "inline-flex",
-              width: "100%",
-              paddingBottom: "25px"
-            }}
-          >
-            {post.frontmatter.authorImg ? (
-              <img
-                className={"author-img"}
-                srcSet={
-                  post.frontmatter.authorImg &&
-                  post.frontmatter.authorImg.childImageSharp.fixed.srcSet
-                }
-                alt=""
-              />
-            ) : (
-              <Image
-                fixed={data.avatar.childImageSharp.fixed}
-                style={{
-                  marginBottom: 0,
-                  minWidth: 50,
-                  borderRadius: `100%`
-                }}
-                imgStyle={{
-                  borderRadius: `50%`
-                }}
-              />
-            )}
-
-            <div
-              style={{
-                display: "flex",
-                marginLeft: "10px",
-                alignItems: "center",
-                width: "100%",
-                marginTop: "5px",
-                justifyContent: "space-between"
-              }}
-            >
-              <div>
-                <p style={{ marginBottom: "0" }}>
-                  {post.frontmatter.author || author}
-                </p>
-
-                <p
-                  style={{
-                    ...scale(-1 / 5),
-                    display: `block`,
-                    marginBottom: 0,
-                    opacity: 0.5,
-                    fontStyle: "italic"
-                  }}
-                >
-                  {post.frontmatter.date}
-                </p>
-              </div>
-
-              <SocialIcons {...{ github, linkedin, twitter }} />
-            </div>
-          </div>
+          <Profile post={post} />
         </header>
         <section className={"mdx-style"}>
           <MDXRenderer>{data.mdx.body}</MDXRenderer>
         </section>
 
         <footer style={{ margin: "30px 0" }}>
-          <Bio slug={pageContext.slug} />
+          <Discuss slug={pageContext.slug} />
         </footer>
       </article>
       <nav style={{ textAlign: "right", margin: "30px 0" }}>

@@ -2,3 +2,7 @@
   font-size: 0.8rem !important;
   margin-bottom: 1.52941rem;
 }
+
+table {
+  border-collapse: initial;
+}

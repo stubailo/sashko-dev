@@ -1,7 +1,7 @@
 ---
 title: "Typography.js: Using scale() and rhythm()"
 date: "2020-04-27"
-description: "Defining font sizes and layout in terms of your text size"
+description: "Defining font sizes and layout like a musical scale"
 imgUrl: "./salty_egg.jpg"
 published: true
 ---
