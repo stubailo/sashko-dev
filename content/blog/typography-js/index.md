@@ -3,7 +3,7 @@ title: "Typography.js: Using scale() and rhythm()"
 date: "2020-04-27"
 description: "Using a musical scale to define font sizes and layout"
 imgUrl: "./typography.png"
-published: true
+published: false
 ---
 
 I was recently working on blog blah blah
