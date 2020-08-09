@@ -10,14 +10,7 @@ import PropTypes from "prop-types";
 import Helmet from "react-helmet";
 import { useStaticQuery, graphql } from "gatsby";
 
-const SEO = ({
-  description,
-  lang,
-  meta,
-  image: metaImage,
-  title,
-  pathname
-}) => {
+const SEO = ({ description, lang, meta, image, title, pathname }) => {
   const { site } = useStaticQuery(
     graphql`
       query {
@@ -36,10 +29,6 @@ const SEO = ({
   );
 
   const metaDescription = description || site.siteMetadata.description;
-  const image =
-    metaImage && metaImage.src
-      ? `${site.siteMetadata.siteUrl}${metaImage.src}`
-      : null;
   const canonical = pathname ? `${site.siteMetadata.siteUrl}${pathname}` : null;
   return (
     <Helmet
@@ -75,10 +64,6 @@ const SEO = ({
           content: `website`
         },
         {
-          name: `twitter:card`,
-          content: `summary`
-        },
-        {
           name: `twitter:creator`,
           content: site.siteMetadata.social.twitter
         },
@@ -91,19 +76,11 @@ const SEO = ({
           content: metaDescription
         }
       ].concat(
-        metaImage
+        image
           ? [
               {
                 property: "og:image",
                 content: image
-              },
-              {
-                property: "og:image:width",
-                content: metaImage.width
-              },
-              {
-                property: "og:image:height",
-                content: metaImage.height
               },
               {
                 name: "twitter:card",
@@ -132,11 +109,7 @@ SEO.propTypes = {
   lang: PropTypes.string,
   meta: PropTypes.arrayOf(PropTypes.object),
   title: PropTypes.string.isRequired,
-  image: PropTypes.shape({
-    src: PropTypes.string.isRequired,
-    height: PropTypes.number.isRequired,
-    width: PropTypes.number.isRequired
-  }),
+  image: PropTypes.string,
   pathname: PropTypes.string
 };
 

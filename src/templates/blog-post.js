@@ -15,8 +15,10 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
   const post = data.mdx;
   const { title: siteTitle } = data.site.siteMetadata;
   const image = post.frontmatter.imgUrl
-    ? post.frontmatter.imgUrl.childImageSharp.resize
+    ? post.frontmatter.imgUrl.childImageSharp.resize.src
     : null;
+
+  console.log("FRONTMATTER", post.frontmatter);
 
   return (
     <Layout location={location} title={siteTitle}>
@@ -90,7 +92,7 @@ export const pageQuery = graphql`
         title
         date(formatString: "YYYY-MM-DD")
         description
-        image: featured {
+        imgUrl {
           childImageSharp {
             resize(width: 1200) {
               src
