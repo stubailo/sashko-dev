@@ -2,7 +2,6 @@
 title: "Bookmarklets for sending emails and adding todo items"
 date: "2019-10-05"
 description: "Adding functionality to your browser without using extensions"
-imgUrl: "./typography.png"
 published: false
 ---
 
