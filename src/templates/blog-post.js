@@ -14,8 +14,8 @@ import "./blog-post.css";
 const BlogPostTemplate = ({ data, pageContext, location }) => {
   const post = data.mdx;
   const { title: siteTitle } = data.site.siteMetadata;
-  const image = post.frontmatter.image
-    ? post.frontmatter.image.childImageSharp.resize
+  const image = post.frontmatter.imgUrl
+    ? post.frontmatter.imgUrl.childImageSharp.resize
     : null;
 
   return (
