@@ -11,13 +11,6 @@
   padding-top: 1.52941rem;
 }
 
-.mdx-style blockquote {
-  margin-left: 0;
-  padding-left: 1.52941rem;
-  border-left: 1px solid #ccc;
-  font-style: italic;
-}
-
 table {
   border-collapse: initial;
 }

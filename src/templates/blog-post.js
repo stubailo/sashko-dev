@@ -90,7 +90,7 @@ export const pageQuery = graphql`
         title
         date(formatString: "YYYY-MM-DD")
         description
-        image: imgUrl {
+        image: featured {
           childImageSharp {
             resize(width: 1200) {
               src
@@ -99,19 +99,19 @@ export const pageQuery = graphql`
             }
           }
         }
-        # author
-        # authorGithub
-        # authorTwitter
-        # authorLinkedin
-        # recommendUrl
-        # recommendTitle
-        # authorImg {
-        #   childImageSharp {
-        #     fixed(width: 50, height: 50) {
-        #       ...GatsbyImageSharpFixed
-        #     }
-        #   }
-        # }
+        author
+        authorGithub
+        authorTwitter
+        authorLinkedin
+        recommendUrl
+        recommendTitle
+        authorImg {
+          childImageSharp {
+            fixed(width: 50, height: 50) {
+              ...GatsbyImageSharpFixed
+            }
+          }
+        }
       }
     }
     avatar: file(absolutePath: { regex: "/profile-pic.jpeg/" }) {
