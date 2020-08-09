@@ -80,7 +80,7 @@ const SEO = ({ description, lang, meta, image, title, pathname }) => {
           ? [
               {
                 property: "og:image",
-                content: image
+                content: `${site.siteMetadata.siteUrl}${image}`
               },
               {
                 name: "twitter:card",
