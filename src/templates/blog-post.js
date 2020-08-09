@@ -18,8 +18,6 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
     ? post.frontmatter.imgUrl.childImageSharp.resize.src
     : null;
 
-  console.log("FRONTMATTER", post.frontmatter);
-
   return (
     <Layout location={location} title={siteTitle}>
       <SEO
