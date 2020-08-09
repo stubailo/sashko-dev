@@ -29,9 +29,17 @@ const BlogIndex = ({ data }) => {
 
       {posts.map(post => {
         const title = post.title;
+        let srcSet = "";
+
+        if (typeof post.imgUrl === "string") {
+          srcSet = post.imgUrl;
+        } else if (post.imgUrl && post.imgUrl.childImageSharp.fixed) {
+          srcSet = post.imgUrl.childImageSharp.fixed.srcSet;
+        }
+
         const image = (
           <img
-            srcSet={post.imgUrl ? post.imgUrl.childImageSharp.fixed.srcSet : ""}
+            srcSet={srcSet}
             alt=""
             style={{ objectFit: "cover", width: "100%", height: "100%" }}
           />

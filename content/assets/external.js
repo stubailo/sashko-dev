@@ -2,7 +2,7 @@ import React from "react";
 export default function({ width }) {
   return (
     <svg
-      fill="#007acc"
+      fill="#404eb3"
       style={{
         width,
         position: "absolute",
