@@ -3,7 +3,6 @@ import { Link, graphql } from "gatsby";
 
 import Layout from "../components/layout";
 import SEO from "../components/seo";
-import External from "./../../content/assets/external";
 import { externalPost } from "../components/external";
 import { Header } from "../components/Header";
 import { rhythm, scale } from "../utils/typography";
@@ -81,8 +80,7 @@ const BlogIndex = ({ data }) => {
                     target={"_blank"}
                     rel="noopener noreferrer"
                   >
-                    {title}
-                    <External width="18px" />
+                    {title} →
                   </a>
                 ) : (
                   <Link to={post.url}>{title}</Link>
