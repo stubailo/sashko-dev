@@ -5,9 +5,9 @@ export default function({ width }) {
       fill="#404eb3"
       style={{
         width,
-        position: "absolute",
-        marginLeft: "5px",
-        paddingBottom: "3px"
+        position: "relative",
+        left: "5px",
+        bottom: "-8px"
       }}
       xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 30 30"
