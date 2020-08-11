@@ -28,7 +28,8 @@ const typography = new Typography(theme);
 if (process.env.NODE_ENV !== `production`) {
   typography.injectStyles();
 }
-
+const { fontSize, lineHeight } = typography.scale(0);
+console.log(fontSize, lineHeight, typography.rhythm(1), "AAAAA");
 export default typography;
 export const rhythm = typography.rhythm;
 export const scale = typography.scale;

@@ -4,7 +4,8 @@ module.exports = {
     author: {
       name: `Sashko Stubailo`
     },
-    description: `Writing about making computers and programming easier and more powerful.`,
+    description: `Engineering manager at Stripe. Previously, open source eng manager at
+    Apollo GraphQL and Meteor.`,
     siteUrl: `https://sashko.dev`,
     social: {
       twitter: `stubailo`,

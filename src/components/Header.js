@@ -9,6 +9,7 @@ export function Header() {
       site {
         siteMetadata {
           title
+          description
           social {
             twitter
             github
@@ -31,7 +32,7 @@ export function Header() {
           style={{
             marginBottom: 0,
             marginRight: rhythm(1 / 2),
-            ...scale(1 / 2)
+            ...scale(3 / 5)
           }}
         >
           {data.site.siteMetadata.title}
@@ -40,8 +41,7 @@ export function Header() {
       </div>
 
       <p style={{ marginBottom: rhythm(1 / 2) }}>
-        Engineering manager at Stripe. Previously, open source eng manager at
-        Apollo GraphQL and Meteor.
+        {data.site.siteMetadata.description}
       </p>
     </header>
   );
