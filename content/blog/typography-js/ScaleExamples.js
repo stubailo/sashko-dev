@@ -36,6 +36,7 @@ export function LineHeights() {
         <td>Scale</td>
         <td>fontSize in px</td>
         <td>lineHeight in px</td>
+        <td>Example</td>
       </tr>
       {[-0.4, 0, 0.2, 0.4, 1, 1.5, 2].map(s => (
         <tr>
@@ -44,6 +45,18 @@ export function LineHeights() {
           </td>
           <td>{(parseFloat(scale(s).fontSize, 10) * 17).toFixed(2)}</td>
           <td>{(parseFloat(scale(s).lineHeight, 10) * 17).toFixed(2)}</td>
+          <td>
+            <div
+              style={{
+                height: scale(s).lineHeight,
+                lineHeight: scale(s).lineHeight,
+                fontSize: scale(s).fontSize,
+                backgroundColor: "#ffde9c"
+              }}
+            >
+              Hello, world
+            </div>{" "}
+          </td>
         </tr>
       ))}
     </table>

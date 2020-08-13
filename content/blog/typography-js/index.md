@@ -3,10 +3,10 @@ title: "Typography.js: Using scale() and rhythm()"
 date: "2020-08-11"
 description: "Using a musical scale to define font sizes and layout"
 imgUrl: "./typography.png"
-published: false
+published: true
 ---
 
-Recently, I've been setting up this blog website using the [Gatsby Starter Blog template](https://www.gatsbyjs.org/starters/gatsbyjs/gatsby-starter-blog/). Looking through the code, I noticed a library I wasn't super familiar with: [Typography.js](https://kyleamathews.github.io/typography.js/).
+Recently I've been working on this blog, starting with the [Gatsby Starter Blog template](https://www.gatsbyjs.org/starters/gatsbyjs/gatsby-starter-blog/). Looking through the code, I noticed a library I wasn't super familiar with: [Typography.js](https://kyleamathews.github.io/typography.js/).
 
 I was intrigued to learn a new way to define type styles, especially since Typography.js was built by Kyle Mathews, the creator of Gatsby. Typography.js is build on a number of design concepts that I didn't quite understand, so I decided to dive in and learn more. This post is my attempt to explain what Typography.js does, why it's useful and interesting, and how to use it.
 
@@ -232,10 +232,6 @@ I'm really glad that I dove into understanding Typography.js. I learned a ton of
 
 I should note that in addition to setting up scale and rhythm, Typography.js also allows you to set font weights, typefaces, and more -- however, I don't think these parts are as surprising and interesting as the concepts above, so I won't elaborate on them.
 
-After going on this journey, one thing I'll note is that I'm not sure it's helpful to include Typography.js in the official `gatsby-blog-starter` template. While it can contribute to making a nice-looking website, I suspect that many people first learning Gatsby will see it as yet another thing they have to learn, or will simply ignore it. Typography.js is a valuable part of a web designer's toolbox, but given Gatsby's popularity I think it's worthwhile to keep the blog starter as simple as possible, and limit the number of new non-Gatsby concepts a developer is introduced to.
+After going on this journey, I'm not sure it's helpful for new Gatsby users to include Typography.js in the official `gatsby-blog-starter` template. WI suspect that many people first learning Gatsby will see it as yet another thing they have to learn, or will simply ignore it. Typography.js is a valuable part of a web designer's toolbox, but given Gatsby's popularity I think it's worthwhile to keep the blog starter as simple as possible.
 
 Overall, Typography.js is a great contribution to the space of web design. Thanks Kyle for the great library, and for all I learned while exploring it!
-
-```
-
-```
