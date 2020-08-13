@@ -6,11 +6,9 @@ imgUrl: "./typography.png"
 published: true
 ---
 
-Recently I've been working on this blog, starting with the [Gatsby Starter Blog template](https://www.gatsbyjs.org/starters/gatsbyjs/gatsby-starter-blog/). Looking through the code, I noticed a library I wasn't super familiar with: [Typography.js](https://kyleamathews.github.io/typography.js/).
+Recently I've been working on this blog, starting with the [Gatsby Starter Blog template](https://www.gatsbyjs.org/starters/gatsbyjs/gatsby-starter-blog/). Looking through the code, I noticed a library I wasn't super familiar with: [Typography.js](https://kyleamathews.github.io/typography.js/). I was intrigued to learn a new way to define type styles, especially since it was built by Kyle Mathews, the creator of Gatsby.
 
-I was intrigued to learn a new way to define type styles, especially since Typography.js was built by Kyle Mathews, the creator of Gatsby. Typography.js is build on a number of design concepts that I didn't quite understand, so I decided to dive in and learn more. This post is my attempt to explain what Typography.js does, why it's useful and interesting, and how to use it.
-
-The two most important ideas in Typography.js are scale and rhythm, and we'll discuss each in turn.
+Typography.js is based on a few design concepts that I didn't quite understand, so I decided to dive in and learn more. This post is my attempt to explain what Typography.js does, why it's useful and interesting, and how to use it.
 
 ## Scale
 
