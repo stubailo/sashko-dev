@@ -3,7 +3,7 @@ title: "Code as no-code"
 date: "2020-08-11"
 description: "What would make modern programming languages simple enough for every day tasks?"
 imgUrl: "../typography-js/typography.png"
-published: true
+published: false
 ---
 
 In the past few years, the no-code movement has been gaining steam. XXX important mission

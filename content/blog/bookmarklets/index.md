@@ -2,7 +2,7 @@
 title: "Bookmarklets for sending emails and adding todo items"
 date: "2019-10-05"
 description: "Adding functionality to your browser without using extensions"
-published: false
+published: true
 ---
 
 A bookmarklet is a snippet of JavaScript code that you can add to your browser bookmarks. When you activate it, that code runs in the context of the current page. This approach lets you do simple operations without having to go to the lengths of writing a browser extension.
@@ -52,7 +52,7 @@ javascript:window.location=%22https://mail.google.com/mail/u/0/?view=cm&fs=1&tf=
 
 Here’s a gif of this bookmark in action on an iPad:
 
-TODO
+![Animated gif showing how you can open the bookmarklet while looking at a page on The Verge, and it opens a new email in Gmail with a link to that page](./sendwithgmail.gif)
 
 First, we have to make sure the code is a valid URL. So we’ve added javascript: to the front to tell the browser this is JavaScript, and replaced special characters with escape sequences. For example, double quotes in URLs need to be replaced with %22.
 
@@ -89,7 +89,7 @@ javascript:window.location=%22things:///add?title=%22+encodeURIComponent(documen
 
 The link won’t do anything if you don’t have Things installed, so here’s a gif to show you what this looks like on an iPad:
 
-TODO
+![Animated gif showing that you can open a bookmark and it adds a task in the Things app](./addtothings.gif)
 
 You can read about all of the different URLs Things supports [in their docs](https://support.culturedcode.com/customer/en/portal/articles/2803573).
 
