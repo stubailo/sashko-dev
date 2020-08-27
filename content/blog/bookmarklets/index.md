@@ -69,7 +69,7 @@ window.location =
 Here’s how it works:
 
 - `window.location =` sets the current URL
-- The Gmail URL is the same one we’ve used above, except we’re now setting the su and body parameters dynamically with code
+- The Gmail URL is the same one we’ve used above, except we’re now setting the `su` and `body` parameters dynamically with code
 - We’re using `document.title` and `window.location.href` to get the current page title and URL
 - `encodeURIComponent` makes sure that the text we’re adding to the URL is properly interpreted as parameters. If we didn’t do this, a rogue `&` in a page title could mess things up!
 
