@@ -54,7 +54,8 @@ const BlogIndex = ({ data }) => {
                 width: rhythm(4),
                 height: rhythm(4),
                 marginRight: rhythm(1),
-                position: "relative"
+                position: "relative",
+                flexShrink: 0
               }}
             >
               {post.external ? (

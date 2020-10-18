@@ -11,6 +11,10 @@
   padding-top: 1.52941rem;
 }
 
+.mdx-style li {
+  margin-bottom: 0;
+}
+
 table {
   border-collapse: initial;
 }
