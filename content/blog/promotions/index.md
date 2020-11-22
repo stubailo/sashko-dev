@@ -42,13 +42,13 @@ However, there are some downsides:
 - Additional stress: the organization will have more expectations of you.
 - Different types of work: if you love what you're doing today, you might have less time to spend on it.
 
-When I think about a goal, I try to imagine what my life would be like if I achieved that goal. For example, in my role as an EM, a common next step is to be a manager of managers. But when I imagine moving to that role today, it doesn't feel like I'd be happier being that far from the day-to-day work of building things. Thankfully, Stripe has been developing a career track for "staff managers" that may create an opportunity for progression while staying close to the engineering work.
+Try to imagine what your life would be like if you achieved that goal. Will you enjoy doing more leadership work and possibly coding less? If you know someone at the level you're looking for, imagine yourself in their shoes -- is that a place you want to be?
 
 If you're mostly looking to learn and grow, getting to the next level of the career ladder may not be the best immediate goal to focus on. But if you've decided that a senior title will have tangible benefits for you, the work to get there will be worth it.
 
 #### The next level isn't about being better -- it's about doing different work
 
-In most of the career ladders I've seen, an uplevel isn't the result of doing better at your current responsibilities. It requires changing what you do day to day, and focusing on new types of work. There's sometimes a misconception that if you aren't getting promoted frequently, you aren't doing a good job in your current role, but that's not the case.
+In most of the career ladders I've seen, an uplevel isn't the result of doing better at your current responsibilities. It requires thinking differently about what you do day to day. There's sometimes a misconception that if you aren't getting promoted frequently, you aren't doing a good job in your current role, but that's not the case.
 
 For example, going from senior engineer to staff engineer often requires working outside the scope of your individual team. If you're currently knocking it out of the park on projects within your team, you'll need to do a different shape of work at the next level. That's why, especially at senior levels, getting promoted "by accident" happens pretty rarely.
 
@@ -58,18 +58,20 @@ In most cases, day-to-day incentives will push you to do the best job you can at
 
 Find out the expectations for someone in the role you're looking for, and take an honest look at how they differ from what you're doing today. It's very helpful to closely partner with your manager on this, since part of their job is understanding the intricacies of different levels and the performance review process.
 
-Once you have an understanding of the gaps you need to fill, it's another good time to check in on your goals. Are these skills that you'll be excited to learn, or does it feel like you're headed for a slog? Often, the things you need to do to get promoted are things you'll need to keep doing forever once you get to the new level. As you learn these skills, you'll need to get accustomed to doing them regularly, rather than as a one-off effort.
+Once you have an understanding of the gaps you need to fill, it's another good time to check in on your goals. Are these skills that you'll be excited to learn, or does it feel like you're headed for a painful slog? Often, the things you need to do to get promoted are things you'll need to keep doing forever once you get to the new level. As you learn these skills, you'll need to get accustomed to doing them regularly, rather than as a one-off effort.
 
-It’s true that often, working toward a promotion can be more work than meeting expectations at the next level, since you have to balance your existing responsibilities with the new. But if the process feels extremely painful, it could be a sign that you may not enjoy some of the expectations of the new role you're going for.
+It’s true that working toward a promotion can often be more work than meeting expectations at the next level, since you have to balance your existing responsibilities with the new. But if the promotion process feels extremely painful, it could be a sign that you may not enjoy some of the expectations of the new role you're going for.
 
 #### Some tips about working towards an uplevel
 
-This post has been primarily about deciding whether a promotion is the right goal for you. There are some good resources out there about how to get promoted: TODO. Here are some general tips from me:
+This post has been primarily about deciding whether a promotion is the right goal for you. There are some good resources out there about how to get promoted, for example on [Will Larson's StaffEng site](https://staffeng.com/guides/getting-the-title-where-you-are).
 
-Demonstrating impact at the next level requires you to have opportunities to do that kind of work. If you don't feel like you have those opportunities, that's something to identify and fix early.
-If you're completely misaligned with your manager about whether a promotion is a good next step for you, it'll be difficult or impossible to achieve, since they are the person primarily making the case on your behalf.
-Even if it feels like you're ready for the next level, you might not actually get it for a cycle or two. You should ask for feedback about what to improve for the next cycle, and it's up to you to decide if you feel like you’re making progress or getting stalled.
-If you're getting feedback that's vague or not actionable, that's important to dig into. It might be a case of bias; it might be that you don't quite understand the feedback and should seek additional advice; or it might be that the organization isn't set up to give you the feedback you need.
+Here are some general tips from me:
+
+- Demonstrating impact at the next level requires you to have opportunities to do that kind of work. If you don't feel like you have those opportunities, that's something to identify and fix early.
+- If you're completely misaligned with your manager about whether a promotion is a good next step for you, it'll be difficult or impossible to achieve, since they are the person primarily making the case on your behalf.
+- Even if it feels like you're ready for the next level, you might not actually get it for a cycle or two. You should ask for feedback about what to improve for the next cycle, and it's up to you to decide if you feel like you’re making progress or getting stalled.
+- If you're getting feedback that's vague or not actionable, that's important to dig into. It might be a case of bias; it might be that you don't quite understand the feedback and should seek additional advice; or it might be that the organization isn't set up to give you the feedback you need.
 
 #### Conclusion
 

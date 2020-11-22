@@ -32,7 +32,9 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
       <article className="markdown-body">
         <header style={{ marginBottom: rhythm(1) }}>
           <div>
-            <h1 style={{ lineHeight: rhythm(2) }}>{post.frontmatter.title}</h1>
+            <h1 style={{ lineHeight: rhythm(2), marginBottom: 0 }}>
+              {post.frontmatter.title}
+            </h1>
             <p
               style={{
                 ...scale(1 / 2)
