@@ -16,7 +16,7 @@ The main advice comes down to this: **show, don't tell**. Prove that you have th
 
 #### What’s a resume for?
 
-Put yourself in the shoes of a hiring manager trying to find someone great to join their team. A resume is the main document they look at to decide who to interview. Most job posts get a lot of applicants and interviews take a lot of time, so it's a big decision.
+Put yourself in the shoes of a hiring manager trying to find someone great to join their team. A resume is the main document they look at to decide who to interview. Most job posts get a lot of applicants and interviews take a lot of time, so it's important to focus on interviewing only the most promising candidates.
 
 Unfortunately, the reader can only spend a minute or two for a first look. If the initial glance looks promising, then they'll spend a few more minutes looking at supporting materials. So it's to your advantage to make the strongest, most concise case you can about your fit for the role.
 
