@@ -10,7 +10,7 @@ published: true
 
 _Photo by [Green Chameleon](https://unsplash.com/@craftedbygc?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on Unsplash_
 
-In my 5 years of being a hiring manager, I've reviewed thousands of resumes ranging from senior engineers to new college/bootcamp graduates. Many great candidates don't present their experience in the best way. In this post I'll go over what I look for in a technical resume, and what makes resumes more or less effective.
+In my 5 years of being a hiring manager, I've reviewed thousands of resumes ranging from senior engineers to new college/bootcamp graduates. In that time, I've notived that many great candidates don't present their experience in the most impactful way. In this post I'll go over what I look for in a technical resume, and what makes resumes more or less effective.
 
 The main advice comes down to this: **show, don't tell**. Prove that you have the skills for the job by showing what you've done.
 
