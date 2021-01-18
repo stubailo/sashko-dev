@@ -2,7 +2,7 @@ import Typography from "typography";
 
 const theme = {
   baseFontSize: "18px",
-  baseLineHeight: "27px",
+  baseLineHeight: "25px",
   googleFonts: [
     {
       name: "Merriweather",
