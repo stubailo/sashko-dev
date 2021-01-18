@@ -6,6 +6,8 @@ imgUrl: "./writing.jpg"
 published: true
 ---
 
+![Photo of someone diagramming on a sheet of paper](./writing.jpg)
+
 <span>Photo by <a href="https://unsplash.com/@craftedbygc?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Green Chameleon</a> on <a href="https://unsplash.com/s/photos/laptop?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span>
 
 In my time as a hiring manager, I’ve reviewed thousands of resumes, ranging from senior candidates with 10+ years of experience to new college and bootcamp graduates. When I’m reviewing candidates, I always try to give them the benefit of the doubt on things like resume structure and formatting, but at the end of the day I can only evaluate people based on the information they provide. So I’m writing this post to explain a bit about what I look for in a technical resume, and some of the things that make resumes more or less effective.
@@ -45,16 +47,16 @@ When you’re working as part of a team, it’s good to give other people credit
 
 #### Effectively highlight project work
 
-It’s a little trickier if you don’t have as much industry experience, and your resume leans heavily on projects done in a more academic or independent setting. My suggestion here is to reach for projects that produce a real-world result. For example, you could build an app for your friends to post progress on their knitting projects, or to plan out complex architecture projects in The Sims, or to create art that you post on an Instagram account.
+It’s a little trickier if you don’t have as much industry experience, and your resume leans heavily on projects done in a more academic or independent setting. My suggestion here is to try to find a project that produces a real-world result. For example, you could build an app for your friends to post progress on their knitting projects, plan out complex architecture projects in The Sims, or create art that you post on an Instagram account. Nick DeJesus takes things to the next level:
 
-<blockquote class="twitter-tweet"><p lang="en" dir="ltr">One thing Resilient Coders does is make the students find paying clients. Great way to both 1. Get paid 2. Build a portfolio.</p>&mdash; Nick DeJesus 🛒🎉 - Unpaid CTO @BTPipeline (@Dayhaysoos) <a href="https://twitter.com/Dayhaysoos/status/1351214451396124676?ref_src=twsrc%5Etfw">January 18, 2021</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+> One thing Resilient Coders does is make the students find paying clients. Great way to both 1. Get paid 2. Build a portfolio. -- [Nick DeJesus (@Dayhaysoos) on Twitter, January 18, 2021](https://twitter.com/Dayhaysoos/status/1351214451396124676?ref_src=twsrc%5Etfw)
 
-Building a project that has some kind of result other than just learning has a few benefits:
+Building a project that a tangible result beyond personal learning has a few benefits:
 
-1. I can check that your project actually works -- either by logging in and trying it myself, or by reading about how other people used it.
-2. There are some aspects of development that only come into play when something is actually live and being used -- error handling, deployment, getting feedback from users, etc. This can act as a stand-in for job experience to some extent.
+1. It proves that your project actually works end-to-end.
+2. It shows you can do the parts of development that only come into play when something is actually live and being used -- error handling, deployment, getting feedback from users, etc. This can act as a stand-in for job experience to some extent.
 
-If you highlight personal projects, make sure to talk about what it does and why, not just the technologies you used -- that’ll help differentiate it from other educational projects and make it feel more real.
+If you highlight personal projects, make sure to talk about what they do and why, not just the technologies you used -- that’ll help make them feel more real.
 
 #### Listing non-tech experience
 
