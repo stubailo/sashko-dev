@@ -18,7 +18,7 @@ The main advice comes down to this: **show, don't tell**. Prove that you have th
 
 Put yourself in the shoes of a hiring manager trying to find someone great to join their team. A resume is the main document they look at to decide who to interview. Most job posts get a lot of applicants and interviews take a lot of time, so it's important to focus on interviewing only the most promising candidates.
 
-Unfortunately, the reader can only spend a minute or two for a first look. If the initial glance looks promising, then they'll spend a few more minutes looking at supporting materials. So it's to your advantage to make the strongest, most concise case you can about your fit for the role.
+Unfortunately, the reader can only spend a minute or two for a first look. If the initial glance looks promising, they'll spend a few more minutes looking at supporting materials. So it's to your advantage to make the strongest, most concise case you can about your fit for the role.
 
 #### Focus on your relevant experience
 
@@ -27,14 +27,14 @@ When reading a resume, I’m looking for concrete evidence that this candidate w
 1. Does this candidate have the technical skills and experience needed? This doesn’t mean they’ve necessarily worked with the specific technologies we use, but that they could learn our stack quickly.
 2. Is this candidate good at getting work done and collaborating with a team? Just having technical skills isn't enough.
 
-The key comes back to "show, don’t tell". Anyone can write that they're a JavaScript expert or that they’re a great teammate -- I'm looking for specific relevant examples.
+The key comes back to "show, don’t tell". Anyone can write that they're a JavaScript expert or that they’re a great teammate -- I'm looking for specific examples.
 
 This is why previous professional experience or equivalent project work should make up the majority of the resume if possible. Don't just put what role you held, but explain what you accomplished and why it was interesting. For example, this doesn't tell me much:
 
 > **Software Engineer II at SoftwareCo**<br />
 > Participated in engineering sprints and collaborated with teammates to ship features quickly with a high quality implementation. Worked across the stack with a JavaScript frontend and a Ruby backend.
 
-This is much more informative, but takes up the same amount of space:
+This is much more informative, and takes up the same amount of space:
 
 > **Software Engineer II, Photos team at SoftwareCo**<br />
 > Led team of 3 engineers to rewrite photo uploader to use a streaming API to reduce upload time by 37%, increasing number of photos uploaded per user by 15%. Led user research and technical scoping.
@@ -53,16 +53,16 @@ If your resume leans heavily on projects done in a more academic or independent 
 
 > One thing Resilient Coders does is make the students find paying clients. Great way to both 1. Get paid 2. Build a portfolio. -- [Nick DeJesus (@Dayhaysoos) on Twitter, January 18, 2021](https://twitter.com/Dayhaysoos/status/1351214451396124676?ref_src=twsrc%5Etfw)
 
-Building a project that a tangible result beyond personal learning has a few benefits:
+Building a project that a tangible result beyond personal learning can be a very rewarding experience, and has two tangible benefits for your resume:
 
-1. It proves that your project actually worked end-to-end.
+1. It shows that your project works end-to-end.
 2. It shows you can launch code to production and handle all that involves -- error handling, deployment, getting feedback from users, etc. This can act as a stand-in for job experience to some extent.
 
 If you highlight personal projects, make sure to talk about what they do and why, not just the technologies you used -- that’ll help make them feel more real.
 
 #### Listing non-tech experience
 
-I’ve often interviewed folks who switched from a different career into software development. If you don’t have enough tech work experience yet to fill out a resume, don't skip over your non-tech experience. These roles might not show off the technical skills you’ve learned, but they show that you’re an effective team member and know how to get things done.
+I’ve often interviewed folks who switched from a different career into software development. If you don’t have enough tech work experience yet to fill out a resume, don't skip over your non-tech experience. These roles might not show off the engineering skills you’ve learned, but they show that you’re an effective team member and know how to get things done.
 
 #### Prioritization, length, and what not to put
 
@@ -74,7 +74,7 @@ I’d suggest leaving out large visual ornamentation -- I’d pretty much always
 
 #### Supporting materials
 
-While I suggest keeping your actual resume short and sweet, you can add more pizazz by linking to supporting materials. This can be a portfolio site, GitHub account, a site or app you worked on, or anything else. Note that this isn't required, and a resume can absolutely stand on its own. However, an exciting project or demo can really add to an application.
+While it's good to keep your actual resume short and sweet, you can add more pizazz by linking to supporting materials. This can be a portfolio site, GitHub account, a site or app you worked on, or anything else. Note that this isn't required, and a resume can absolutely stand on its own. However, an exciting project or demo can really add to an application.
 
 If you do link to supporting materials, make sure they are useful. It’s discouraging to click on someone’s personal website link and see that the site is down, or click on a GitHub link and see that there are no repositories. If there isn't anything to look at, just leave it out.
 
@@ -82,8 +82,8 @@ If you are linking to some repositories on GitHub, I’d suggest taking some tim
 
 #### Get feedback and a proofread from someone
 
-It might be tempting to see a resume as a personal thing that’s embarrassing to share. But you’re about to hang your hopes for an exciting new job on this document -- at least get someone to read it over first! At the very least, ask someone you trust to look for typos or other mistakes. If you know someone that has experience hiring for tech roles, ask them what they think.
+It might be tempting to see a resume as a personal thing that’s embarrassing to share. But it's such an important document -- try to get someone to read it over first! At the very least, ask someone you trust to look for typos or other mistakes. If you know someone that has experience hiring for tech roles, ask them what they think.
 
-At the end of the day, a well-put-together resume won’t change your actual experience or help you pass an interview. But it could certainly tip the scales and help you get that first interview.
+A well-put-together resume could really help you get that first interview. I hope this post was helpful! If you have any other questions or thoughts, please reach out to me at [@stubailo on Twitter](https://twitter.com/stubailo).
 
 _Thanks [@janhoogeveen](https://twitter.com/janhoogeveen) for providing feedback about this post!_
