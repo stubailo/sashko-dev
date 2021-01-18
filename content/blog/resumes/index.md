@@ -8,7 +8,7 @@ published: true
 
 ![Photo of someone diagramming on a sheet of paper](./writing.jpg)
 
-<span>Photo by <a href="https://unsplash.com/@craftedbygc?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Green Chameleon</a> on <a href="https://unsplash.com/s/photos/laptop?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span>
+_Photo by [Green Chameleon](https://unsplash.com/@craftedbygc?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on Unsplash_
 
 In my time as a hiring manager, I’ve reviewed thousands of resumes, ranging from senior candidates with 10+ years of experience to new college and bootcamp graduates. When I’m reviewing candidates, I always try to give them the benefit of the doubt on things like resume structure and formatting, but at the end of the day I can only evaluate people based on the information they provide. So I’m writing this post to explain a bit about what I look for in a technical resume, and some of the things that make resumes more or less effective.
 
