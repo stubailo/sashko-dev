@@ -86,4 +86,4 @@ It might be tempting to see a resume as a personal thing that’s embarrassing t
 
 At the end of the day, a well-put-together resume won’t change your actual experience or help you pass an interview. But it could be the difference between getting noticed for that dream job and your application getting passed over because the hiring manager didn’t see your potential.
 
-_Thanks [@janhoogeveen](https://twitter.com/janhoogeveen) for providing feedback about this post as I was working on it!_
+_Thanks [@janhoogeveen](https://twitter.com/janhoogeveen) for providing feedback about this post!_
