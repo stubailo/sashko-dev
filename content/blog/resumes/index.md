@@ -53,7 +53,7 @@ If your resume leans heavily on projects done in a more academic or independent 
 
 > One thing Resilient Coders does is make the students find paying clients. Great way to both 1. Get paid 2. Build a portfolio. -- [Nick DeJesus (@Dayhaysoos) on Twitter, January 18, 2021](https://twitter.com/Dayhaysoos/status/1351214451396124676?ref_src=twsrc%5Etfw)
 
-Building a project that a tangible result beyond personal learning can be a very rewarding experience, and has two tangible benefits for your resume:
+Building a project with a tangible result beyond personal learning can be a very rewarding experience, and has two benefits for your resume:
 
 1. It shows that your project works end-to-end.
 2. It shows you can launch code to production and handle all that involves -- error handling, deployment, getting feedback from users, etc. This can act as a stand-in for job experience to some extent.
