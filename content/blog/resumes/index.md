@@ -83,3 +83,5 @@ If you are linking to a GitHub and you have some repositories on there, I’d su
 It might be tempting to see a resume as a personal thing that’s embarrassing to share. But you’re about to hang your hopes for an exciting new job on this document -- at least get someone to read it over first! At the very least, ask someone you trust to look for typos or other mistakes; if you know someone that has experience hiring for tech roles, ask them what could be improved.
 
 At the end of the day, a well-put-together resume won’t change your actual experience or help you pass an interview. But it could be the difference between getting noticed for that dream job and your application getting passed over because the hiring manager didn’t see your potential.
+
+_Thanks [@janhoogeveen](https://twitter.com/janhoogeveen) for providing feedback about this post as I was working on it!_
