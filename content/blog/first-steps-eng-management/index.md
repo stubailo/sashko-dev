@@ -1,6 +1,6 @@
 ---
 title: "My first steps into engineering management"
-date: "2021-05-17"
+date: "2021-05-22"
 description: "Throwback to 2016: How I decided to become an EM, and what I learned in the first year"
 imgUrl: "./office.jpg"
 published: true
