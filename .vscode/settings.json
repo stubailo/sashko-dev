@@ -2,5 +2,6 @@
   "search.exclude": {
     "package-lock.json": true
   },
-  "editor.formatOnSave": true
+  "editor.formatOnSave": true,
+  "editor.tabSize": 2
 }
