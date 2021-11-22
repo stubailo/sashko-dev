@@ -136,7 +136,7 @@ I tested this by manually calling the function with some email contents, and che
 
 ## Zapier for interacting with email
 
-Unfortunately, Autocode doesn't have a native way to run code via email (or at least didn't at the time I built this) so I had to reach for another tool. I'd used [Zapier](https://zapier.com) before and knew it supported email automation, so I went for that.
+Autocode doesn't have a native way to run code via email (or at least didn't at the time I built this) so I had to reach for another tool. I'd used [Zapier](https://zapier.com) before and knew it supported email automation, so I went for that.
 
 It was pretty straightforward to set up a Zap to run my Autocode function upon receiving an email:
 
@@ -144,7 +144,7 @@ It was pretty straightforward to set up a Zap to run my Autocode function upon r
 
 I sent an email to the address, and indeed an mp3 eventually ended up in my S3 bucket, as expected! But I wasn't satisfied with that -- I also wanted it to send the mp3 file back to my inbox so I could easily listen to it.
 
-Unfortunately, Amazon Polly isn't instant -- it takes a few seconds for the file to actually show up. And I learned that waiting during a Zap -- called "Delay For" -- is actually a paid Zapier feature. So I'm now paying $20 a month for Zapier, specifically for this one component:
+However, Amazon Polly isn't instant -- it takes a few seconds for the file to actually show up. And I learned that waiting during a Zap -- called "Delay For" -- is actually a paid Zapier feature. So I'm now paying $20 a month for Zapier, specifically for this one component:
 
 ![A screenshot of Zapier steps to wait and then send an email](./zapier-two.png)
 
