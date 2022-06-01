@@ -44,7 +44,7 @@
   },
   "devDependencies": {
     "prettier": "^1.19.1",
-    "sharp": "^0.28.2"
+    "sharp": "^0.30.5"
   },
   "homepage": "https://github.com/gatsbyjs/gatsby-starter-blog#readme",
   "keywords": [
